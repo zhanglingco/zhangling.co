@@ -1,0 +1,31 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "我的个人网站",
+  "autor": "Ling Z",
+  "main": "index.js",
+  "dependencies": {
+    "element-ui": "^2.7.2",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "vuepress": "^0.14.8"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lingzZ/Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lingzZ/Blog/issues"
+  },
+  "homepage": "https://lingzZ.github.io/blog"
+}
