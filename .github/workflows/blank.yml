@@ -1,0 +1,42 @@
+name: website deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.access_token }}
+        BRANCH: gh-pages
+        FOLDER: .vuepress/dist
+        BUILD_SCRIPT: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
+
+# name: website deploy
+
+# on: [push]
+
+# jobs:
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v1
+#     - name: install npm package
+#       run: npm install
+#     - name: build project
+#       run: npm run build
+#     - run: echo 'zhangling91.me' > .vuepress/dist/CNAME
+#     - name: Deploy
+#       uses: peaceiris/actions-gh-pages@v2.5.0
+#       env:
+#         ACTIONS_DEPLOY_KEY: ${{secrets.access_token}}
+#         PUBLISH_BRANCH: gh-pages
+#         PUBLISH_DIR: .vuepress/dist
