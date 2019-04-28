@@ -18,7 +18,7 @@
 		//- a(href="http://github.com/lingzZ")
 		//- 	i.iconfont.icon-qq
 
-	p.about.animated.fadeInDown(style="animation-delay: .8s;") Zhang Ling,&nbsp;&nbsp;an Architect
+	p.about.animated.fadeInDown(style="animation-delay: .8s;") Ling Z,&nbsp;&nbsp;an Architect
 
 	.menu
 		a.animated(
@@ -97,6 +97,9 @@ a
 		background-size cover
 		border-radius 100%
 		box-shadow 0px 0px 10px 3px #ccc
+		&:hover
+			background url('/images/photo-hover.jpg') no-repeat center center
+			background-size cover
 
 // about
 .about
