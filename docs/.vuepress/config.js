@@ -26,12 +26,14 @@ module.exports = {
 			{
 				text: '教程',
 				items: [
+					{ text: '知识图谱', link: 'https://github.com/zhanglingco/architect-structure' },
 					{ text: 'JavaScript 教程', link: 'https://github.com/zhanglingco/js-tutorial' },
 					{ text: 'Java 教程', link: 'https://github.com/zhanglingco/java-tutorial' },
 					{ text: 'Redis 教程', link: 'https://github.com/zhanglingco/redis-tutorial' },
 					{ text: 'AWS 教程', link: 'https://github.com/zhanglingco/aws-tutorial' },
 			  	]
 			},
+			{ text: '笔记', link: 'https://github.com/zhanglingco/notebook' },
 			{ text: '关于', link: '/aboutme.html' },
 			{ text: 'GitHub', link: 'https://github.com/zhanglingco/zhanglingco.github.io' },
 		]
