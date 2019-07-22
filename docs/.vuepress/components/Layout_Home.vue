@@ -51,10 +51,10 @@ export default {
 			],
 			// 推荐列表
 			recommends: [
-				{ title: '《JavaScript 教程》', link: 'https://github.com/zhanglingco/js-tutorial', background: '#fbf94e'},
-				{ title: '《Java 教程》', link: 'https://github.com/zhanglingco/java-tutorial', background: '#1672b7'},
-				{ title: '《Redis 教程》', link: 'https://github.com/zhanglingco/redis-tutorial', background: '#ef5c55'},
-				{ title: '《AWS 教程》', link: 'https://github.com/zhanglingco/aws-tutorial', background: '#f90'},
+				{ title: '《知识问答》', link: 'https://github.com/zhanglingco/coder-interview', background: '#fbf94e'},
+				{ title: '《Linc脚手架》', link: 'https://github.com/zhanglingco/linc', background: '#ef5c55'},
+				{ title: '《Go 语言教程》', link: 'https://github.com/zhanglingco/tutorial/blob/master/golang.md', background: '#1672b7'},
+				{ title: '《MongoDB 教程》', link: 'https://github.com/zhanglingco/tutorial/blob/master/mongodb.md', background: '#f90'},
 			]
 		}
 	},

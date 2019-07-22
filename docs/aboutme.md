@@ -19,8 +19,8 @@ experience:
 - time: 2014年6月
   text: 毕业于皖西学院，获得工学学士学位
   type: primary
-- time: 2013年9月
-  text: 从事Web开发工作（实习）
+- time: 2013年10月
+  text: 皖院校园商城（校内创业）
   type: info
 - time: 2013年7月
   text: 自学前端
