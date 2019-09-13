@@ -25,7 +25,7 @@ module.exports = {
 			{ text: '杂谈', link: 'https://github.com/zhanglingco/Blog/issues' },
 			{
 				text: '教程',
-				link: 'https://tutorial.zhangling.co/',
+				link: 'https://tutorial.zhangling.me/',
 				// items: [
 				// 	{ text: '知识图谱', link: 'https://github.com/zhanglingco/architect-structure' },
 				// 	{ text: 'JavaScript 教程', link: 'https://github.com/zhanglingco/js-tutorial' },

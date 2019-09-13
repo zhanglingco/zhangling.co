@@ -51,7 +51,7 @@ export default {
 			],
 			// 推荐列表
 			recommends: [
-				{ title: '《知识问答》', link: 'https://qa.zhangling.co', background: '#fbf94e'},
+				{ title: '《知识问答》', link: 'https://qa.zhangling.me', background: '#fbf94e'},
 				{ title: '《Linc脚手架》', link: 'https://github.com/zhanglingco/linc', background: '#ef5c55'},
 				{ title: '《Go 语言教程》', link: 'https://github.com/zhanglingco/tutorial/blob/master/golang.md', background: '#1672b7'},
 				{ title: '《MongoDB 教程》', link: 'https://github.com/zhanglingco/tutorial/blob/master/mongodb.md', background: '#f90'},
