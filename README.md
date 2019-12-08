@@ -1,3 +1,7 @@
+---
+layout: SiteLayout
+---
+
 # Personal Website
 
 Welcome to my personal website. Read more about me:

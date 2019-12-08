@@ -9,23 +9,23 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "pug": "^2.0.3",
+    "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.2.0"
   },
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
     "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lingzZ/Blog.git"
+    "url": "git+https://github.com/zhanglingup/zhangling.me.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lingzZ/Blog/issues"
+    "url": "https://github.com/zhanglingup/zhangling.me/issues"
   },
-  "homepage": "https://lingzZ.github.io/blog"
+  "homepage": "https://zhangling.me"
 }
