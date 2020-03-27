@@ -3,10 +3,10 @@
  */
 <template lang="pug">
 .container
-	a.photo.animated.zoomIn(href="/aboutme.html" title="About me")
+	a.photo.animated.zoomIn(href="/aboutme" title="About me")
 
 	.links.animated.fadeInDown(style="animation-delay: .4s;")
-		a(href="http://github.com/zhangling91")
+		a(href="http://github.com/zhanglingx")
 			i.iconfont.icon-github
 		a(href="javascript:;")
 			i.iconfont.icon-wechat
@@ -22,7 +22,7 @@
 
 	.menu
 		a.animated(
-			v-for="(item, index) in menus"
+			v-for="(item, index) in indexDB.menus"
 			:href="item.link"
 			:class="menusAnimateClass"
 			:style="'animation-delay: ' + (1 + 0.2 * index) + 's;'") {{item.title}}
@@ -30,56 +30,29 @@
 	//- recommend
 	.recommend.animated.fadeInLeft(style="animation-delay: 2s;")
 		a(
-			v-for="(item, index) in recommends"
+			v-for="(item, index) in indexDB.recommends"
 			:href="item.link"
 			:style="'background: ' + item.background") {{item.title}}
 </template>
 
 <script>
+import jsyaml from 'js-yaml'
+import indexDB from '~/database/index.yaml'
+
 export default {
-	data () {
-		return {
-      // 菜单列表
-      menus: [
-        {title: 'Blog',
-          link: 'https://blog.zhangling.me/'},
-        {title: 'Tutorials',
-          link: 'https://github.com/zhangling91?tab=repositories&q=tutorial'},
-        {title: 'Projects',
-          link: 'https://github.com/zhangling91?tab=repositories&q=project'},
-        {title: 'Code',
-          link: 'https://github.com/zhangling91'},
-        {title: 'About me',
-          link: '/aboutme'}
-      ],
-      // 推荐列表
-      recommends: [{
-        title: '《前端开发规范》',
-        link: 'https://feguide.zhangling.me/',
-        background: '#fbf94e'},
-      { title: '《知识问答》',
-        link: 'https://github.com/zhangling91/coder-graph',
-        background: '#1672b7'},
-      { title: '《Cook脚手架》',
-        link: 'https://github.com/CookX/cook-cli',
-        background: '#ef5c55'},
-      { title: '《Vue可视化开发》',
-        link: 'https://github.com/cookx/vue-visual',
-        background: '#f90'
-      }],
-			// 菜单动画
-			menusAnimateClass: "fadeInDown"
-		}
-  },
+	data: () => ({
+    // 菜单动画
+    menusAnimateClass: "fadeInDown"
+  }),
 
   computed: {
-    data () {
-      return this.$page.frontmatter
+    indexDB () {
+      return jsyaml.load(indexDB.body)
     },
   },
 
 	mounted () {
-		this.bounce()
+    this.bounce()
 	},
 
 	methods: {

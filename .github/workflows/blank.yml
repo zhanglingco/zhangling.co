@@ -15,7 +15,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.access_token }}
         BRANCH: gh-pages
-        FOLDER: .vuepress/dist
+        FOLDER: dist
         BUILD_SCRIPT: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
 
 # name: website deploy
@@ -33,10 +33,10 @@ jobs:
 #       run: npm install
 #     - name: build project
 #       run: npm run build
-#     - run: echo 'zhangling91.me' > .vuepress/dist/CNAME
+#     - run: echo 'zhanglingx.me' > dist/CNAME
 #     - name: Deploy
 #       uses: peaceiris/actions-gh-pages@v2.5.0
 #       env:
 #         ACTIONS_DEPLOY_KEY: ${{secrets.access_token}}
 #         PUBLISH_BRANCH: gh-pages
-#         PUBLISH_DIR: .vuepress/dist
+#         PUBLISH_DIR: dist
