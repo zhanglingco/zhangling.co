@@ -18,8 +18,8 @@ recommends:
 - title: '《前端开发规范》'
   link: 'https://feguide.zhangling.me/'
   background: '#fbf94e'
-- title: 《知识问答》
-  link: https://github.com/zhanglingx/coder-graph
+- title: 《技术问答题》
+  link: https://ask.zhangling.me/
   background: '#1672b7'
 - title: 《Cook脚手架》
   link: https://github.com/CookX/cook-cli
